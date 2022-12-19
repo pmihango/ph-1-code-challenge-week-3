@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const homeLink = document.getElementById('home-link')
 
     homeLink.addEventListener('click', () => {
-        // hide categories, search and countries
+       
         FilmRow.style.display = "flex"
     })
 
@@ -41,27 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const filmShowtime = document.createElement('p')
         filmShowtime.classList.add('card-text')
         filmShowtime.textContent = showtime
-
-    
-        // const ticketsSold = document.createElement('p')
-        // ticketsSold.classList.add('card-text')
-        // ticketsSold.textContent = tickets_sold
-
-        // const filmCapacity = document.createElement('p')
-        // filmCapacity.classList.add('card-text')
-        // filmCapacity.textContent = parseInt(capacity, 10)
-
-        // const remTicket = document.createElement('p')
-        // remTicket.classList.add('card-text')
-        // remTicket.textContent = (filmCapacity - ticketsSold)
-
-        // append body elements
         bodyDiv.appendChild(filmTitle)
         bodyDiv.appendChild(filmRuntime)
         bodyDiv.appendChild(filmShowtime)
-        // bodyDiv.appendChild(ticketsSold)
-        // bodyDiv.appendChild(filmCapacity)
-        // bodyDiv.appendChild(remTicket)
+        
 
         // append image elements
         imgDiv.appendChild(filmImg)
@@ -136,25 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // let rootDiv = document.createElement('div')
             // rootDiv.classList.add('col-4', 'p-1')
         
-            // let cardDiv = document.createElement('div')
-            // cardDiv.classList.add('card', 'col-12', 'p-2')
-        
-            // let filmTitle = document.createElement('h6')
-            //     filmTitle.classList.add('card-title')
-            //     filmTitle.innerText = title
-
-                
-           
-          
-            // cardDiv.appendChild(filmTitle)
-        
-            //     rootDiv.appendChild(cardDiv)
-        
-              
-               
-
-      
-        
+            
             // return rootDiv
         }
 
@@ -173,25 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                 }
             
-                 
-           
-            
-
-            // let btn = document.getElementById("remaining")
-            // btn.addEventListener('click', () => {
-            //     if(ticketRem.textContent <= 0){
-            //         let btn2 = document.getElementById("soldout")
-            //         btn2.removeAttribute('hidden')
-            //         // let btnHidden = document.getElementById('soldout')
-            //         // btnHidden.removeAttribute('hidden')
-            //     }else {
-            //         let tickets_sold = film.tickets_sold + 1
-            //         return tickets_sold
-            //     }
-               
-            // })
-        
-       
+          
         
         let loadTitles = () => {
             fetch(url)
@@ -207,24 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
   
-    // function buyTicket(){
-    //     let button = document.querySelector("button#buy-ticket")
-    //     button.addEventListener("click",function(){
-    //     let currentLi = document.querySelector("div#ticket-counter")
-    //     let number = parseInt(currentLi.textContent)
-    //     if(number >=1){
-    //         currentLi.textContent = currentLi.textContent -1}
-    //         else {document.querySelector("button#buy-ticket").textContent = "Sold Out"
-    //           alert("Sorry, No more tickets available!!")}
-    //       }
-    //       )
-    //       }
-    //       buyTicket()
-          
-
-
-  
-  
+   
 
    loadFilm()
   getFilm()

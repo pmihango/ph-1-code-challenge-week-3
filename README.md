@@ -23,20 +23,20 @@ As a user I can:
 ### Executing program
 
 * The app can be priviewed and tested online on the link below 
-* https://
+* https://pmihango.github.io/ph-1-code-challenge-week-3/ 
 ```
 
 ```
 
 ## Help
 
-If any problems arise check and confirm you have json-server installed, initialized and running so that it can be able to detect/see your json file.
+If any problems arise check and confirm you have json-server installed, initialized and running 
 ```
 
 ```
 
 # Authors
-This project was done bu Paul Mihango
+This project was done by Paul Mihango
 - 
 
 # License
