@@ -1,63 +1,40 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Code Challenge week 3</title>
-    <link
-      rel="stylesheet"> <link rel="stylesheet" href="assets/index.css" />
+    <head>
+        <meta charset="utf-8" />
+        <title>Film Project</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+
     
-  </head>
-  <body>
-    <!-- navbar -->
-    <div class="heading">
-      <div class="item">
-        <h2 class="ui header">
-            <div class="content">FLATDANGO</div>
+        <nav class="navbar bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-item text-light" id="home-link">FLATIRON MOVIES</a>
+               
+            </div>
+        </nav>
+
+        <div class="card col-8 px-2 mb-5 mt-5"id="div1" hidden>
+
+            
+            <h3 class="card-title"id="title" >Title</h3>
+            <img id="poster" src="./images/default.jpg"  width="200" height="200"></img>
+            <p class="card-text" id="runtime">Runtime</p>
+            <p class="card-text" id="showtime">Showtime</p>
+            <p id="ticketno">Remaining Tickets</p> 
           
-        </h2>
-      </div>
-    </div>
-
-    <div class="ui centered grid">
-      <div class="four wide column">
-        <div id = "movie-list" class="list-container">
-          <!-- side menu -->
-          <ul class="ul" id="films">
-            <li class="film item">Movie Titles</li>
-          </ul>
+       </div>
+ 
+        <div class="container mt-5" id="main-container">
+          
+        
+            <div class="row" id="random-film"></div>
         </div>
-      </div>
-
-      <!-- poster -->
-      <div class="four wide column">
-        <img
-          id="poster"
-          src="assets/placeholderImage.jpg"
-          alt="MOVIE TITLE"
-        />
-      </div>
-
-      <!-- showing info -->
-      <div class="four wide column">
-        <div class="ui cards" id="showing">
-          <div class="card">
-            <div id="title" class="title"> </div>
-            <div id="runtime" class="meta"> </div>
-            <div class="content">
-              <div class="description">
-                <div id="film-info"> </div>
-                <span id="showtime" class="ui label"> </span>
-                <span id="ticket-num"> </span> remaining tickets
-              </div>
-            </div>
-            <div class="extra content">
-              <button id="buy-ticket">Buy Ticket </button> 
-                
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="src/index.js"></script>
-  </body>
+       
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
 </html>

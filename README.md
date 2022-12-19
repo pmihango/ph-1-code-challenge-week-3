@@ -1,37 +1,44 @@
-# Project Description
+# Project Title
 
-This a an app for the Flatiron Movie Theater.
+Flatiron Movie Theater
 
-The App name is Flatdango, that allows to view a list of movies, the movie poster, movies description and movie runtime 
-
-Users can purchase movie tickets from the theater.
-
-
-## Project Setup
-
-Run this command to get the backend started:
-
-
-$ json-server --watch db.json
+## Description
+This app enables you as the user to see the different films listed and their details like the film poster, title, runtime and showtime
+As a user I can:
+* See a list of the first film. 
+* See a list of all films. 
+* Click on a films' title to see its details i.e image, title, showtime etc.
+* When viewing a films' details, I can click on a button and book a ticket and also see remaining tickets for a specific movie
 
 
-Test your server by visiting this route in the browser:
-
-http://localhost:3000/films
-
-Then, open the `index.html` file on your browser to run the application.
+## Getting Started
 
 
-## Core Deliverables
+### Installing
 
-As a user, I can:
+* Install json server in your machine with the command npm i -g json-server
+* Run this command to get the backend started: json-server --watch db.json
+* Test your server by visiting this route in the browser: http://localhost:3000/films
 
-1. See the first movie's details, including its **poster, title, runtime,
-   showtime, and available tickets** when the page loads. The number of
-   available tickets will need to be derived by subtracting the number of
-   `tickets_sold` from the theater's `capacity`. You will need to make a GET
-   request to the following endpoint to retrieve the film data:
+### Executing program
 
-  
+* The app can be priviewed and tested online on the link below 
+* https://
+```
 
+```
+
+## Help
+
+If any problems arise check and confirm you have json-server installed, initialized and running so that it can be able to detect/see your json file.
+```
+
+```
+
+# Authors
+This project was done bu Paul Mihango
+- 
+
+# License
+The project is licensed under ISC.
 
