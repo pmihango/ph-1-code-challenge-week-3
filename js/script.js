@@ -1,4 +1,4 @@
-let url = "https://richard200.github.io/code-challenge-3/database.json"
+let url = "https://github.com/pmihango/ph-1-code-challenge-week-3/database.json"
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -43,17 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
         filmShowtime.textContent = showtime
 
     
-        // const ticketsSold = document.createElement('p')
-        // ticketsSold.classList.add('card-text')
-        // ticketsSold.textContent = tickets_sold
-
-        // const filmCapacity = document.createElement('p')
-        // filmCapacity.classList.add('card-text')
-        // filmCapacity.textContent = parseInt(capacity, 10)
-
-        // const remTicket = document.createElement('p')
-        // remTicket.classList.add('card-text')
-        // remTicket.textContent = (filmCapacity - ticketsSold)
 
         // append body elements
         bodyDiv.appendChild(filmTitle)
@@ -90,9 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let poster = filmData.poster
             let runtime = "Runtime : " + filmData.runtime + " Minutes"
             let showtime = "Showtime : " + filmData.showtime
-            // let tickets_sold = "Tickets Sold : " + filmData.tickets_sold
-            // let capacity = "Capacity : " + filmData.capacity
-            // let remTicks = "Remaining Tickets : " + filmData.remTickets
+            
 
             let filmElement = createFilm(poster, title, runtime, showtime)
             FilmRow.appendChild(filmElement)
@@ -133,29 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // hiddenDiv3 = document.getElementById()
                 
             })
-            // let rootDiv = document.createElement('div')
-            // rootDiv.classList.add('col-4', 'p-1')
-        
-            // let cardDiv = document.createElement('div')
-            // cardDiv.classList.add('card', 'col-12', 'p-2')
-        
-            // let filmTitle = document.createElement('h6')
-            //     filmTitle.classList.add('card-title')
-            //     filmTitle.innerText = title
-
-                
            
-          
-            // cardDiv.appendChild(filmTitle)
-        
-            //     rootDiv.appendChild(cardDiv)
-        
-              
-               
-
-      
-        
-            // return rootDiv
         }
 
         function getOneFilm(film) {
@@ -172,12 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
          
                     
                 }
-            
-                 
-           
-            
-
-           
+        
        
         
         let loadTitles = () => {
